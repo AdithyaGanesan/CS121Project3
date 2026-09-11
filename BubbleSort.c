@@ -19,6 +19,7 @@ void sort(int *arr) {
         for (int j = 0; j < MAX - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(&arr[j], &arr[j + 1]);
+		        printValues(arr);
             }
         }
     }
@@ -29,14 +30,6 @@ int main(){
   int values[] = {7, 3, 9, 4, 6, 1, 2, 8, 5};
   printf("Before: \n");
   printValues(values);
-
-  // test swap
-  int x = 3;
-  int y = 5;
-  printf("x: %d, y: %d \n", x, y);
-  swap(&x, &y);
-  printf("x: %d, y: %d \n", x, y);
-
   sort(values);
   printf("After: \n");
   printValues(values);

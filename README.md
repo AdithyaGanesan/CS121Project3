@@ -18,5 +18,6 @@ function sort(array):
         for j from zero to MAX - 2:
             if array[j] > array[j + 1]:
                 swap array[j] with array[j + 1]
+                printArray(array)
 
-    printArray(array)
+    
